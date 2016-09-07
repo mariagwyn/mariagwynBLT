@@ -1,13 +1,13 @@
 project:
-    machine_name: blted8
-    prefix: BLT
-    human_name: 'BLTed 8'
+    machine_name: timelines
+    prefix: TLS
+    human_name: 'Timelines'
     profile:
         name: lightning
         contrib: true
     local:
         protocol: http
-        hostname: '${project.machine_name}.localhost'
+        hostname: 'local.${project.machine_name}.dd:8083'
 git:
     default_branch: master
     remotes:
@@ -32,4 +32,3 @@ target-hooks:
         dir: '${docroot}/profiles/contrib/lightning'
         command: 'npm run install-libraries'
 import: null
-

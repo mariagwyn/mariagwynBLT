@@ -8,14 +8,24 @@
         "cweagans/composer-patches": "^1.5.0",
         "drupal/acquia_connector": "8.1.*",
         "drupal/acsf": "~8.1",
-        "drupal/core": "~8",
         "drupal/console": "~1",
         "drupal/memcache": "8.*",
         "drupal/security_review": "8.*",
         "roave/security-advisories": "dev-master",
         "drupal-composer/drupal-security-advisories": "8.0.x-dev",
-        "drupal/lightning": "8.1.03",
-        "drupal/metatag": "8.1.0-beta9"
+        "drupal/core": "8.2.0-beta3",
+        "drupal/lightning": "8.1.x-dev",
+        "drupal/metatag": "8.1.0-beta9",
+        "drupal/file_browser":              "~8.1",
+        "drupal/dropzonejs": "8.1.x-dev",
+        "enyo/dropzone": "4.2.0",
+        "desandro/masonry": "3.3.2",
+        "desandro/imagesloaded": "3.2.0",
+        "drupal/views_timelinejs":          "8.3.x-dev",
+        "drupal/image_url_formatter":       "~8.1",
+        "drupal/adminimal_theme":           "^8.1.1",
+        "drupal/zurb_foundation":           "~8.6",
+        "drupal/devel": "8.1.x-dev"
     },
     "prefer-stable": true,
     "require-dev": {
@@ -33,7 +43,8 @@
         "squizlabs/php_codesniffer": "2.*",
         "phing/phing": "dev-master#0ef30e55bb5871cb38903cc0ee9d76074118a22c",
         "jakoch/phantomjs-installer": "dev-master as 1.9.8",
-        "jarnaiz/behat-junit-formatter": "^1.2"
+        "jarnaiz/behat-junit-formatter": "^1.2",
+        "drupal-composer/drupal-scaffold": "dev-master"
     },
     "scripts": {
         "post-create-project-cmd": [
@@ -51,6 +62,43 @@
         {
             "type": "composer",
             "url": "https://packagist.drupal-composer.org"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "desandro/masonry",
+                "version": "3.3.2",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/desandro/masonry/archive/v3.3.2.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "desandro/imagesloaded",
+                "version": "3.2.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/desandro/imagesloaded/archive/v3.2.0.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "enyo/dropzone",
+                "version": "4.2.0",
+                "type": "drupal-library",
+                "source": {
+                    "url": "https://github.com/enyo/dropzone",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
         }
     ],
     "autoload-dev": {
@@ -71,6 +119,9 @@
             ],
             "docroot/themes/contrib/{$name}": [
                 "type:drupal-theme"
+            ],
+            "docroot/libraries/{$name}": [
+                "type:drupal-library"
             ],
             "drush/contrib/{$name}": [
                 "type:drupal-drush"

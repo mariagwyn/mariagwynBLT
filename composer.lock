@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ab2f77ac3e74292bd7274749da5f6c20",
-    "content-hash": "1ba88ab3224bfeb76c53ac7169a26be3",
+    "hash": "059cf774efc56c3842a7295fe756e815",
+    "content-hash": "9530b4c08c4d0c1e80a69a96c5847ad0",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -68,6 +68,49 @@
                 "zip"
             ],
             "time": "2016-02-15 22:46:40"
+        },
+        {
+            "name": "asm89/stack-cors",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asm89/stack-cors.git",
+                "reference": "3ae8ef219bb4c9a6caf857421719aa07fa7776cc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asm89/stack-cors/zipball/3ae8ef219bb4c9a6caf857421719aa07fa7776cc",
+                "reference": "3ae8ef219bb4c9a6caf857421719aa07fa7776cc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "symfony/http-foundation": "~2.1|~3.0",
+                "symfony/http-kernel": "~2.1|~3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Asm89\\Stack": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander",
+                    "email": "iam.asm89@gmail.com"
+                }
+            ],
+            "description": "Cross-origin resource sharing library and stack middleware",
+            "homepage": "https://github.com/asm89/stack-cors",
+            "keywords": [
+                "cors",
+                "stack"
+            ],
+            "time": "2016-08-01 12:05:04"
         },
         {
             "name": "composer/installers",
@@ -281,6 +324,28 @@
             ],
             "description": "Provides a way to patch Composer packages.",
             "time": "2016-03-28 18:54:21"
+        },
+        {
+            "name": "desandro/imagesloaded",
+            "version": "3.2.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/desandro/imagesloaded/archive/v3.2.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "drupal-library"
+        },
+        {
+            "name": "desandro/masonry",
+            "version": "3.3.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/desandro/masonry/archive/v3.3.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "drupal-library"
         },
         {
             "name": "dflydev/placeholder-resolver",
@@ -733,47 +798,6 @@
             "time": "2014-09-09 13:34:57"
         },
         {
-            "name": "drupal-composer/drupal-scaffold",
-            "version": "2.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal-composer/drupal-scaffold.git",
-                "reference": "617fa3a2466795b148e3255651591682f2325ede"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-scaffold/zipball/617fa3a2466795b148e3255651591682f2325ede",
-                "reference": "617fa3a2466795b148e3255651591682f2325ede",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.0.0",
-                "php": ">=5.4.5"
-            },
-            "require-dev": {
-                "composer/composer": "dev-master",
-                "phpunit/phpunit": "^4.4.0"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "DrupalComposer\\DrupalScaffold\\Plugin",
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "DrupalComposer\\DrupalScaffold\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Composer Plugin for updating the Drupal scaffold files when using drupal/core",
-            "time": "2016-08-29 16:56:02"
-        },
-        {
             "name": "drupal-composer/drupal-security-advisories",
             "version": "8.0.x-dev",
             "source": {
@@ -904,6 +928,37 @@
             "time": "2016-09-01 09:23:09"
         },
         {
+            "name": "drupal/adminimal_theme",
+            "version": "8.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/adminimal_theme",
+                "reference": "572d3869c7a349f75f1dbc32bf2853f1fdb334b3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/adminimal_theme-8.x-1.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Drupal administration theme with modern minimalist design.",
+            "homepage": "https://www.drupal.org/project/adminimal_theme",
+            "time": "2015-12-05 16:48:42"
+        },
+        {
             "name": "drupal/config_update",
             "version": "8.1.1",
             "source": {
@@ -1031,19 +1086,20 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.1.8",
+            "version": "8.2.0-beta3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-composer/drupal-core.git",
-                "reference": "3f06f574ccc1e18b61ef150780fb1900c2f40abc"
+                "reference": "f49c311528a24d5fa065159148d76efa6eda287b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/3f06f574ccc1e18b61ef150780fb1900c2f40abc",
-                "reference": "3f06f574ccc1e18b61ef150780fb1900c2f40abc",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/f49c311528a24d5fa065159148d76efa6eda287b",
+                "reference": "f49c311528a24d5fa065159148d76efa6eda287b",
                 "shasum": ""
             },
             "require": {
+                "asm89/stack-cors": "~1.0",
                 "composer/semver": "~1.0",
                 "doctrine/annotations": "1.2.*",
                 "doctrine/common": "2.5.*",
@@ -1054,7 +1110,7 @@
                 "paragonie/random_compat": "~1.0",
                 "php": ">=5.5.9",
                 "stack/builder": "1.0.*",
-                "symfony-cmf/routing": "1.3.*",
+                "symfony-cmf/routing": "~1.4",
                 "symfony/class-loader": "~2.8",
                 "symfony/console": "~2.8",
                 "symfony/dependency-injection": "~2.8",
@@ -1083,6 +1139,7 @@
                 "drupal/big_pipe": "self.version",
                 "drupal/block": "self.version",
                 "drupal/block_content": "self.version",
+                "drupal/block_place": "self.version",
                 "drupal/book": "self.version",
                 "drupal/breakpoint": "self.version",
                 "drupal/ckeditor": "self.version",
@@ -1092,6 +1149,7 @@
                 "drupal/config": "self.version",
                 "drupal/config_translation": "self.version",
                 "drupal/contact": "self.version",
+                "drupal/content_moderation": "self.version",
                 "drupal/content_translation": "self.version",
                 "drupal/contextual": "self.version",
                 "drupal/core-annotation": "self.version",
@@ -1116,6 +1174,7 @@
                 "drupal/core-utility": "self.version",
                 "drupal/core-uuid": "self.version",
                 "drupal/datetime": "self.version",
+                "drupal/datetime_range": "self.version",
                 "drupal/dblog": "self.version",
                 "drupal/dynamic_page_cache": "self.version",
                 "drupal/editor": "self.version",
@@ -1141,6 +1200,7 @@
                 "drupal/minimal": "self.version",
                 "drupal/node": "self.version",
                 "drupal/options": "self.version",
+                "drupal/outside_in": "self.version",
                 "drupal/page_cache": "self.version",
                 "drupal/path": "self.version",
                 "drupal/quickedit": "self.version",
@@ -1180,8 +1240,7 @@
             "type": "drupal-core",
             "extra": {
                 "patches_applied": {
-                    "Ignore front end vendor folders to improve directory search performance": "https://www.drupal.org/files/issues/ignore_front_end_vendor-2329453-116.patch",
-                    "Plugin Lazy loading can cause usort warning": "https://www.drupal.org/files/issues/Iterating-through-array--2699157.patch"
+                    "Ignore front end vendor folders to improve directory search performance": "https://www.drupal.org/files/issues/ignore_front_end_vendor-2329453-116.patch"
                 }
             },
             "autoload": {
@@ -1205,19 +1264,19 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2016-08-03 14:09:08"
+            "time": "2016-08-26 14:28:15"
         },
         {
             "name": "drupal/ctools",
-            "version": "8.3.0-alpha26",
+            "version": "8.3.0-alpha27",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/ctools",
-                "reference": "c14a5eee970c3d0aab02e88f6c6a4d18091439b8"
+                "reference": "231e2649678d58901368a9e5681f36865ce84e73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.0-alpha26.zip",
+                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.0-alpha27.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1237,9 +1296,6 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-3.x": "8.3.x-dev"
-                },
-                "patches_applied": {
-                    "2747739 - Mega patch": "https://www.drupal.org/files/issues/ctools--8.x-3.0-alpha26--1fe3649.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -1248,7 +1304,85 @@
             ],
             "description": "Provides a number of utility and helper APIs for Drupal developers and site builders.",
             "homepage": "https://www.drupal.org/project/ctools",
-            "time": "2016-05-06 18:51:13"
+            "time": "2016-08-20 19:59:03"
+        },
+        {
+            "name": "drupal/devel",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/devel",
+                "reference": "70a380bf590cfb63a450d84d0f3baab1fb1ec965"
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "replace": {
+                "drupal/devel_generate": "self.version",
+                "drupal/devel_node_access": "self.version",
+                "drupal/kint": "self.version",
+                "drupal/webprofiler": "self.version"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/devel_generate, drupal/devel_node_access, drupal/kint, drupal/webprofiler",
+                "drupal/menu_ui": "Required by drupal/devel_node_access",
+                "symfony/var-dumper": "Pretty print complex values better with var-dumper available"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Moshe Weitzman",
+                    "email": "weitzman@tejasa.com",
+                    "homepage": "https://github.com/weitzman",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Various blocks, pages, and functions for developers.",
+            "homepage": "http://drupal.org/project/devel",
+            "time": "2016-09-03 10:12:17"
+        },
+        {
+            "name": "drupal/dropzonejs",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/dropzonejs.git",
+                "reference": "e28bb330771319ed0b45fbd7cd9535a4ac019805"
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/file": "8.*"
+            },
+            "replace": {
+                "drupal/dropzonejs_eb_widget": "self.version"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/dropzonejs_eb_widget",
+                "drupal/entity_browser": "Required by drupal/dropzonejs_eb_widget",
+                "drupal/file": "Required by drupal/dropzonejs_eb_widget"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "DropzoneJS",
+            "homepage": "https://www.drupal.org/project/dropzonejs",
+            "time": "2016-08-02 19:13:00"
         },
         {
             "name": "drupal/embed",
@@ -1315,15 +1449,15 @@
         },
         {
             "name": "drupal/entity_browser",
-            "version": "8.1.0-alpha7",
+            "version": "8.1.0-alpha8",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/entity_browser.git",
-                "reference": "3875750f3d0a063af6c1c5e6aee4b45d210f8264"
+                "reference": "51bbe80e35f6e962b3ec77172e9ad61fec7163dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-1.0-alpha7.zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-1.0-alpha8.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1371,7 +1505,7 @@
             ],
             "description": "Provide a generic entity browser/picker/selector.",
             "homepage": "http://drupal.org/project/entity_browser",
-            "time": "2016-08-02 07:56:04"
+            "time": "2016-09-01 19:44:17"
         },
         {
             "name": "drupal/entity_embed",
@@ -1445,6 +1579,88 @@
             "description": "Enables administrators to package configuration into modules.",
             "homepage": "https://www.drupal.org/project/features",
             "time": "2016-09-02 20:10:53"
+        },
+        {
+            "name": "drupal/file_browser",
+            "version": "8.1.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/file_browser.git",
+                "reference": "b734db04f7ef10d478202b09c5184802da3a9665"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/file_browser-8.x-1.0-alpha1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/dropzonejs": "8.*",
+                "drupal/dropzonejs_eb_widget": "8.*",
+                "drupal/entity_browser": "8.*",
+                "drupal/entity_embed": "8.*",
+                "drupal/entity_reference": "8.*",
+                "drupal/field": "8.*",
+                "drupal/file": "8.*",
+                "drupal/image": "8.*",
+                "drupal/menu_ui": "8.*",
+                "drupal/node": "8.*",
+                "drupal/path": "8.*",
+                "drupal/text": "8.*",
+                "drupal/views": "8.*"
+            },
+            "replace": {
+                "drupal/file_browser_example": "self.version"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/file_browser_example"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides a default Entity Browser for files, using Masonry and Imagesloaded.",
+            "homepage": "https://www.drupal.org/project/file_browser",
+            "time": "2016-08-03 02:13:19"
+        },
+        {
+            "name": "drupal/image_url_formatter",
+            "version": "8.1.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/image_url_formatter",
+                "reference": "e9b3b4de22140de73b96093d0f19629aa930d9fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/image_url_formatter-8.x-1.0-beta1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/image": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Add an URL formatter for image field.",
+            "homepage": "https://www.drupal.org/project/image_url_formatter",
+            "time": "2016-02-20 10:31:15"
         },
         {
             "name": "drupal/inline_entity_form",
@@ -1533,22 +1749,15 @@
         },
         {
             "name": "drupal/lightning",
-            "version": "8.1.03",
+            "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/lightning.git",
-                "reference": "11f32757e195d24400da42e7810134b3995d00e4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning-8.x-1.03.zip",
-                "reference": null,
-                "shasum": null
+                "reference": "18a8c5974ebd9be43447d05182b335f1d775f8be"
             },
             "require": {
                 "composer/installers": "^1.0",
                 "cweagans/composer-patches": "^1.5.0",
-                "drupal-composer/drupal-scaffold": "^2.0.0",
                 "drupal/acquia_connector": "^8.1.1",
                 "drupal/block_content": "8.*",
                 "drupal/breakpoint": "8.*",
@@ -1558,13 +1767,13 @@
                 "drupal/contact": "8.*",
                 "drupal/contextual": "8.*",
                 "drupal/core": "^8.1.0",
-                "drupal/ctools": "8.3.0-alpha26",
+                "drupal/ctools": "8.3.0-alpha27",
                 "drupal/datetime": "8.*",
                 "drupal/dblog": "8.*",
                 "drupal/editor": "8.*",
                 "drupal/embed": "^8.1.0",
                 "drupal/entity": "8.1.0-alpha3",
-                "drupal/entity_browser": "8.1.0-alpha7",
+                "drupal/entity_browser": "8.1.0-alpha8",
                 "drupal/entity_embed": "8.1.0-alpha3",
                 "drupal/entity_reference": "8.*",
                 "drupal/features": "^8.3.0",
@@ -1586,7 +1795,7 @@
                 "drupal/node": "8.*",
                 "drupal/options": "8.*",
                 "drupal/page_cache": "8.*",
-                "drupal/page_manager": "8.1.0-alpha23",
+                "drupal/page_manager": "8.1.0-alpha24",
                 "drupal/panelizer": "8.3.0-alpha2",
                 "drupal/panels": "8.3.0-beta4",
                 "drupal/path": "8.*",
@@ -1620,6 +1829,7 @@
                 "behat/behat": "^3.0",
                 "behat/mink": "~1.7",
                 "behat/mink-goutte-driver": "~1.2",
+                "drupal-composer/drupal-scaffold": "^2.0.0",
                 "drupal/coder": "8.*",
                 "drupal/devel": "^8.0.0",
                 "drupal/drupal-extension": "^3.2",
@@ -1647,10 +1857,15 @@
                 "drupal/media_entity_image": "Required by drupal/lightning_media_image",
                 "drupal/media_entity_instagram": "Required by drupal/lightning_media_instagram",
                 "drupal/media_entity_twitter": "Required by drupal/lightning_media_twitter",
+                "drupal/menu_ui": "Required by drupal/lightning_core",
+                "drupal/metatag": "Required by drupal/lightning_core",
+                "drupal/node": "Required by drupal/lightning_core",
                 "drupal/page_manager": "Required by drupal/lightning_layout",
                 "drupal/panelizer": "Required by drupal/lightning_layout",
+                "drupal/path": "Required by drupal/lightning_core",
                 "drupal/scheduled_updates": "Required by drupal/lightning_workflow",
-                "drupal/user": "Required by drupal/lightning_media",
+                "drupal/text": "Required by drupal/lightning_core",
+                "drupal/user": "Required by drupal/lightning_core, drupal/lightning_media",
                 "drupal/video_embed_media": "Required by drupal/lightning_media_video",
                 "drupal/views_infinite_scroll": "Required by drupal/lightning_media",
                 "drupal/workbench_moderation": "Required by drupal/lightning_workflow"
@@ -1669,20 +1884,11 @@
                     "drupal/core": {
                         "Plugin Lazy loading can cause usort warning": "https://www.drupal.org/files/issues/Iterating-through-array--2699157.patch"
                     },
-                    "drupal/ctools": {
-                        "2747739 - Mega patch": "https://www.drupal.org/files/issues/ctools--8.x-3.0-alpha26--1fe3649.patch"
-                    },
-                    "drupal/metatag": {
-                        "2765137 - hook_install() + drupal_set_message() = message displayed several times when using a distro.": "https://www.drupal.org/files/issues/2765137-2.patch"
-                    },
-                    "drupal/page_manager": {
-                        "2747739 - Mega Patch": "https://www.drupal.org/files/issues/page_manager--alpha23-09e79ff--2747739-3.patch"
-                    },
                     "drupal/panelizer": {
                         "2747739 - Mega Patch": "https://www.drupal.org/files/issues/panelizer--alpha2-1ddfa61--2747739-5.patch",
                         "2701349 - Generate new UUIDs for displays when switching from default to field storage": "https://www.drupal.org/files/issues/2701349-2.patch",
                         "2700597 - Explicitly set the Panels IPE URL root when saving in Panelizer": "https://www.drupal.org/files/issues/panelizer-ipe-url-root-handling.patch",
-                        "2664682 - Implement admin UI for editing Panelizer defaults": "https://www.drupal.org/files/issues/2664682-49.patch"
+                        "2664682 - Implement admin UI for editing Panelizer defaults": "https://www.drupal.org/files/issues/2664682-55.patch"
                     },
                     "drupal/panels": {
                         "2747739 - Mega Patch": "https://www.drupal.org/files/issues/panels--beta4-4c4a3a7--2747739-17--binary.patch",
@@ -1711,7 +1917,7 @@
             ],
             "description": "A fast and feature-rich Drupal distribution.",
             "homepage": "https://www.drupal.org/project/lightning",
-            "time": "2016-08-03 19:09:44"
+            "time": "2016-09-06 17:59:42"
         },
         {
             "name": "drupal/media_entity",
@@ -1958,9 +2164,6 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-1.x": "8.1.x-dev"
-                },
-                "patches_applied": {
-                    "2765137 - hook_install() + drupal_set_message() = message displayed several times when using a distro.": "https://www.drupal.org/files/issues/2765137-2.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -1984,22 +2187,23 @@
         },
         {
             "name": "drupal/page_manager",
-            "version": "8.1.0-alpha23",
+            "version": "8.1.0-alpha24",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/page_manager",
-                "reference": "fed1710d1b366bb3417b197270c6d73caeae4fa1"
+                "reference": "e17581138de8047ffa4b740a6d9074f854aa80c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/page_manager-8.x-1.0-alpha23.zip",
+                "url": "https://ftp.drupal.org/files/projects/page_manager-8.x-1.0-alpha24.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "drupal/block": "8.*",
                 "drupal/core": "8.*",
-                "drupal/ctools": "~8.3.0-alpha21"
+                "drupal/ctools": "~8.3.0-alpha21",
+                "drupal/system": ">=8.0.5"
             },
             "replace": {
                 "drupal/page_manager_ui": "self.version"
@@ -2011,9 +2215,6 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-1.x": "8.1.x-dev"
-                },
-                "patches_applied": {
-                    "2747739 - Mega Patch": "https://www.drupal.org/files/issues/page_manager--alpha23-09e79ff--2747739-3.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -2029,7 +2230,7 @@
             ],
             "description": "Provides a way to place blocks on a custom page.",
             "homepage": "https://www.drupal.org/project/page_manager",
-            "time": "2016-02-16 19:47:59"
+            "time": "2016-08-20 19:15:40"
         },
         {
             "name": "drupal/panelizer",
@@ -2055,12 +2256,6 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-3.x": "8.3.x-dev"
-                },
-                "patches_applied": {
-                    "2747739 - Mega Patch": "https://www.drupal.org/files/issues/panelizer--alpha2-1ddfa61--2747739-5.patch",
-                    "2701349 - Generate new UUIDs for displays when switching from default to field storage": "https://www.drupal.org/files/issues/2701349-2.patch",
-                    "2700597 - Explicitly set the Panels IPE URL root when saving in Panelizer": "https://www.drupal.org/files/issues/panelizer-ipe-url-root-handling.patch",
-                    "2664682 - Implement admin UI for editing Panelizer defaults": "https://www.drupal.org/files/issues/2664682-49.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -2101,12 +2296,6 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-3.x": "8.3.x-dev"
-                },
-                "patches_applied": {
-                    "2747739 - Mega Patch": "https://www.drupal.org/files/issues/panels--beta4-4c4a3a7--2747739-17--binary.patch",
-                    "2667754 - Allow other modules to disable the IPE based on custom logic": "https://www.drupal.org/files/issues/2667754-3.patch",
-                    "Bandaid tempstore patch": "https://www.drupal.org/files/issues/bandaid.patch",
-                    "2697587 - Wizard API integration": "https://www.drupal.org/files/issues/2697587-48.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -2174,9 +2363,6 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-1.x": "8.1.x-dev"
-                },
-                "patches_applied": {
-                    "2674874 - Issue saving Schedule Update Type form": "https://www.drupal.org/files/issues/schedule_updates-save_type-2674874-2.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -2326,6 +2512,32 @@
             "time": "2016-07-23 12:06:51"
         },
         {
+            "name": "drupal/views_timelinejs",
+            "version": "dev-8.x-3.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/views_timelinejs",
+                "reference": "c0f2c7b0d93e62e5ede7c3977f9ba03f413da233"
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/views": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-3.x": "8.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides a View style that displays rows in a Timeline.",
+            "homepage": "https://www.drupal.org/project/views_timelinejs",
+            "time": "2016-08-25 17:36:30"
+        },
+        {
             "name": "drupal/workbench_moderation",
             "version": "8.1.1",
             "source": {
@@ -2348,9 +2560,6 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-1.x": "8.1.x-dev"
-                },
-                "patches_applied": {
-                    "2668006 - Provide logical access control for when IPE should be applied to moderated nodes": "https://www.drupal.org/files/issues/2668006-2.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -2363,6 +2572,55 @@
                 "Drupal"
             ],
             "time": "2016-06-28 04:04:37"
+        },
+        {
+            "name": "drupal/zurb_foundation",
+            "version": "8.6.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/zurb-foundation.git",
+                "reference": "9eba86db3f16090c7509073ce55dc922230d8fba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/zurb-foundation-8.x-6.0-alpha1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "replace": {
+                "drupal/zurb_foundation": "self.version"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-6.x": "8.6.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Quillen (kevinquillen)",
+                    "homepage": "https://www.drupal.org/u/kevinquillen",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Samuel Mortensen (samuelmortenson)",
+                    "homepage": "https://www.drupal.org/u/samuelmortenson",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "The most advanced responsive front-end framework in the world, now in Drupal! Based on Zurb Foundation version 6.x.",
+            "homepage": "http://drupal.org/project/zurb_foundation",
+            "keywords": [
+                "Drupal"
+            ],
+            "time": "2016-05-02 17:11:51"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -2477,6 +2735,16 @@
                 "validator"
             ],
             "time": "2016-07-03 21:52:18"
+        },
+        {
+            "name": "enyo/dropzone",
+            "version": "4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/enyo/dropzone",
+                "reference": "origin/master"
+            },
+            "type": "drupal-library"
         },
         {
             "name": "gabordemooij/redbean",
@@ -3449,36 +3717,38 @@
         },
         {
             "name": "symfony-cmf/routing",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/Routing.git",
-                "reference": "8e87981d72c6930a27585dcd3119f3199f6cb2a6"
+                "reference": "b93704ca098334f56e9b317932f21a4362e620db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/Routing/zipball/8e87981d72c6930a27585dcd3119f3199f6cb2a6",
-                "reference": "8e87981d72c6930a27585dcd3119f3199f6cb2a6",
+                "url": "https://api.github.com/repos/symfony-cmf/Routing/zipball/b93704ca098334f56e9b317932f21a4362e620db",
+                "reference": "b93704ca098334f56e9b317932f21a4362e620db",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3",
-                "psr/log": "~1.0",
-                "symfony/http-kernel": "~2.2",
-                "symfony/routing": "~2.2"
+                "php": "^5.3.9|^7.0",
+                "psr/log": "1.*",
+                "symfony/http-kernel": "^2.2|3.*",
+                "symfony/routing": "^2.2|3.*"
             },
             "require-dev": {
-                "symfony/config": "~2.2",
-                "symfony/dependency-injection": "~2.0@stable",
-                "symfony/event-dispatcher": "~2.1"
+                "friendsofsymfony/jsrouting-bundle": "^1.1",
+                "symfony-cmf/testing": "^1.3",
+                "symfony/config": "^2.2|3.*",
+                "symfony/dependency-injection": "^2.0.5|3.*",
+                "symfony/event-dispatcher": "^2.1|3.*"
             },
             "suggest": {
-                "symfony/event-dispatcher": "DynamicRouter can optionally trigger an event at the start of matching. Minimal version ~2.1"
+                "symfony/event-dispatcher": "DynamicRouter can optionally trigger an event at the start of matching. Minimal version (~2.1)"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.3-dev"
+                    "dev-master": "1.4-dev"
                 }
             },
             "autoload": {
@@ -3502,7 +3772,7 @@
                 "database",
                 "routing"
             ],
-            "time": "2014-10-20 20:55:17"
+            "time": "2016-03-31 09:11:39"
         },
         {
             "name": "symfony/class-loader",
@@ -5790,11 +6060,52 @@
             "time": "2015-06-14 21:17:01"
         },
         {
+            "name": "drupal-composer/drupal-scaffold",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal-composer/drupal-scaffold.git",
+                "reference": "617fa3a2466795b148e3255651591682f2325ede"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-scaffold/zipball/617fa3a2466795b148e3255651591682f2325ede",
+                "reference": "617fa3a2466795b148e3255651591682f2325ede",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0.0",
+                "php": ">=5.4.5"
+            },
+            "require-dev": {
+                "composer/composer": "dev-master",
+                "phpunit/phpunit": "^4.4.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "DrupalComposer\\DrupalScaffold\\Plugin",
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DrupalComposer\\DrupalScaffold\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Composer Plugin for updating the Drupal scaffold files when using drupal/core",
+            "time": "2016-08-29 16:56:02"
+        },
+        {
             "name": "drupal/coder",
             "version": "8.2.8",
             "source": {
                 "type": "git",
-                "url": "https://github.com/klausi/coder.git",
+                "url": "https://git.drupal.org/project/coder",
                 "reference": "6d717e1a5a5dd592ebbeaafad11746849fb52532"
             },
             "dist": {
@@ -8177,9 +8488,14 @@
     "stability-flags": {
         "roave/security-advisories": 20,
         "drupal-composer/drupal-security-advisories": 20,
+        "drupal/lightning": 20,
+        "drupal/dropzonejs": 20,
+        "drupal/views_timelinejs": 20,
+        "drupal/devel": 20,
         "behat/mink": 0,
         "phing/phing": 20,
-        "jakoch/phantomjs-installer": 20
+        "jakoch/phantomjs-installer": 20,
+        "drupal-composer/drupal-scaffold": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
