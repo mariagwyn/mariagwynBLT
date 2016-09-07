@@ -11,7 +11,7 @@ project:
 git:
     default_branch: master
     remotes:
-        - 'bolt8@svn-5223.devcloud.hosting.acquia.com:bolt8.git'
+        - 'mariagwynblt@svn-5599.devcloud.hosting.acquia.com:mariagwynblt.git'
 drush:
     aliases:
         remote: '${project.machine_name}.test'

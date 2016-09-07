@@ -21,10 +21,19 @@
         "enyo/dropzone": "4.2.0",
         "desandro/masonry": "3.3.2",
         "desandro/imagesloaded": "3.2.0",
-        "drupal/views_timelinejs":          "8.3.x-dev",
         "drupal/image_url_formatter":       "~8.1",
         "drupal/adminimal_theme":           "^8.1.1",
         "drupal/zurb_foundation":           "~8.6",
+        "drupal/admin_toolbar":                       "~8.1",
+        "drupal/feeds":                               "~8.3",
+        "drupal/field_group":                         "8.1.*",
+        "drupal/file_entity":                         "~8.2",
+        "drupal/footnotes":                           "8.2.*",
+        "drupal/geolocation":                         "8.1.x-dev",
+        "drupal/git_deploy":                          "~8.2",
+        "drupal/google_analytics":                    "~8.2",
+        "drupal/social_media_links":                  "~8.2",
+        "drupal/views_timelinejs":          "8.3.x-dev",
         "drupal/devel": "8.1.x-dev"
     },
     "prefer-stable": true,
@@ -62,6 +71,10 @@
         {
             "type": "composer",
             "url": "https://packagist.drupal-composer.org"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/mariagwyn/mgm_tools"
         },
         {
             "type": "package",
@@ -107,26 +120,15 @@
         }
     },
     "extra": {
-        "installer-paths": {
-            "docroot/core": [
-                "type:drupal-core"
-            ],
-            "docroot/modules/contrib/{$name}": [
-                "type:drupal-module"
-            ],
-            "docroot/profiles/contrib/{$name}": [
-                "type:drupal-profile"
-            ],
-            "docroot/themes/contrib/{$name}": [
-                "type:drupal-theme"
-            ],
-            "docroot/libraries/{$name}": [
-                "type:drupal-library"
-            ],
-            "drush/contrib/{$name}": [
-                "type:drupal-drush"
-            ]
-        },
+      "installer-paths": {
+        "docroot/core": ["type:drupal-core"],
+        "docroot/modules/contrib/{$name}/": ["type:drupal-module"],
+        "docroot/themes/contrib/{$name}/": ["type:drupal-theme"],
+        "docroot/libraries/{$name}/": ["type:drupal-library"],
+        "docroot/profiles/{$name}/": ["type:drupal-profile"],
+        "docroot/modules/custom/{$name}/": ["type:drupal-module-custom"],
+        "drush/contrib/{$name}": ["type:drupal-drush"]
+      },
         "patches": {
             "drupal/core": {
                 "Ignore front end vendor folders to improve directory search performance": "https://www.drupal.org/files/issues/ignore_front_end_vendor-2329453-116.patch"
