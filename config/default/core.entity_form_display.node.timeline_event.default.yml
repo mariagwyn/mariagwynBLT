@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.timeline_event.field_date_display_text
     - field.field.node.timeline_event.field_date_end_text
     - field.field.node.timeline_event.field_date_start_text
+    - field.field.node.timeline_event.field_external_links
     - field.field.node.timeline_event.field_image_background
     - field.field.node.timeline_event.field_media
     - field.field.node.timeline_event.field_media_caption
@@ -72,6 +73,13 @@ content:
       placeholder: '-0044-03-15'
     third_party_settings: {  }
     type: string_textfield
+  field_external_links:
+    weight: 27
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
   field_image_background:
     weight: 11
     settings:

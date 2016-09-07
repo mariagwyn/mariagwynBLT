@@ -1,0 +1,24 @@
+uuid: b1a8b7a9-f3a2-4b0e-a1c8-a2955e1cf5d7
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.who_s_new
+  module:
+    - views
+  theme:
+    - zurb_foundation
+id: views_block__who_s_new_block_1
+theme: zurb_foundation
+region: '-1'
+weight: null
+provider: null
+plugin: 'views_block:who_s_new-block_1'
+settings:
+  id: 'views_block:who_s_new-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

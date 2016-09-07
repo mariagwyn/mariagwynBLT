@@ -34,6 +34,7 @@
         "drupal/google_analytics":                    "~8.2",
         "drupal/social_media_links":                  "~8.2",
         "drupal/views_timelinejs":          "8.3.x-dev",
+        "mariagwyn/timelinejs_example":          "master",
         "drupal/devel": "8.1.x-dev"
     },
     "prefer-stable": true,
@@ -74,7 +75,7 @@
         },
         {
           "type": "vcs",
-          "url": "https://github.com/mariagwyn/mgm_tools"
+          "url": "https://github.com/mariagwyn/timelinejs_example"
         },
         {
             "type": "package",

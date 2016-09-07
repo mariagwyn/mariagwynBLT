@@ -40,6 +40,7 @@ settings:
             - Blockquote
             - Table
             - HorizontalRule
+            - file_browser
             - media_browser
         -
           name: 'Block Formatting'

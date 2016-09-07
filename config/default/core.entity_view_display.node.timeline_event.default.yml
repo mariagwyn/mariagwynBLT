@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.timeline_event.field_date_display_text
     - field.field.node.timeline_event.field_date_end_text
     - field.field.node.timeline_event.field_date_start_text
+    - field.field.node.timeline_event.field_external_links
     - field.field.node.timeline_event.field_image_background
     - field.field.node.timeline_event.field_media
     - field.field.node.timeline_event.field_media_caption
@@ -71,6 +72,17 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+  field_external_links:
+    weight: 16
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
   field_image_background:
     weight: 10
     label: above
