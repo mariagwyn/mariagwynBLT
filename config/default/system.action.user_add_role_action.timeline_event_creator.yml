@@ -1,0 +1,16 @@
+uuid: 01f04693-a001-41f3-ace7-53a66465901b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.timeline_event_creator
+  module:
+    - user
+_core:
+  default_config_hash: r74AqUM0FguREBlx6v7EA50X8qkTMIqqyDwe4ywicJo
+id: user_add_role_action.timeline_event_creator
+label: 'Add the Timeline Event Creator role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: timeline_event_creator

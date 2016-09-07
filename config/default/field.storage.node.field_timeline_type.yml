@@ -1,0 +1,23 @@
+uuid: 5fdb4a04-9370-40e5-9a2e-ad10b48be01f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: rMZ1fkaltRYkdckhuoBy8wzIg1eYz2bOPW2UC8cjBB4
+id: node.field_timeline_type
+field_name: field_timeline_type
+entity_type: node
+type: string
+settings:
+  max_length: 15
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

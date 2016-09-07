@@ -1,0 +1,10 @@
+name: TimelineJS Example
+type: module
+description: Example content type and view for TimelineJS
+core: 8.x
+package: Views
+dependencies:
+  - views_timelinejs
+  - image_url_formatter
+  - dropzonejs
+  - file_browser

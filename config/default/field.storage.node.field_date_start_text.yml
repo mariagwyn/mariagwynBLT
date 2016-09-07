@@ -1,0 +1,23 @@
+uuid: 94948364-615f-4110-ae08-944e41e2e0d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: vK7HLAHNSr3wJEqLEHdGaTPAMFuIrWmjYdOhG882hFw
+id: node.field_date_start_text
+field_name: field_date_start_text
+entity_type: node
+type: string
+settings:
+  max_length: 15
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

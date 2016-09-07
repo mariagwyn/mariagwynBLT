@@ -1,0 +1,189 @@
+uuid: 7deb6467-1d01-4bec-bc32-dbe2c7fb295b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.timeline_event.body
+    - field.field.node.timeline_event.field_background_color
+    - field.field.node.timeline_event.field_date_display_text
+    - field.field.node.timeline_event.field_date_end_text
+    - field.field.node.timeline_event.field_date_start_text
+    - field.field.node.timeline_event.field_external_links
+    - field.field.node.timeline_event.field_image_background
+    - field.field.node.timeline_event.field_media
+    - field.field.node.timeline_event.field_media_caption
+    - field.field.node.timeline_event.field_media_credit
+    - field.field.node.timeline_event.field_media_image
+    - field.field.node.timeline_event.field_media_link
+    - field.field.node.timeline_event.field_timeline_group
+    - field.field.node.timeline_event.field_timeline_type
+    - field.field.node.timeline_event.field_vocab_timeline
+    - node.type.timeline_event
+  module:
+    - file_browser
+    - link
+    - path
+    - text
+    - workbench_moderation
+_core:
+  default_config_hash: XFbr0NHStxs03ZHUjdmOyiQKjh1V6bMvKkSEHv61c40
+id: node.timeline_event.default
+targetEntityType: node
+bundle: timeline_event
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 5
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+  field_background_color:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_date_display_text:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: '44-30 BCE'
+    third_party_settings: {  }
+    type: string_textfield
+  field_date_end_text:
+    weight: 2
+    settings:
+      size: 12
+      placeholder: '-0030-08-12'
+    third_party_settings: {  }
+    type: string_textfield
+  field_date_start_text:
+    weight: 1
+    settings:
+      size: 12
+      placeholder: '-0044-03-15'
+    third_party_settings: {  }
+    type: string_textfield
+  field_external_links:
+    weight: 27
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_image_background:
+    weight: 11
+    settings:
+      entity_browser: browse_files
+      field_widget_edit: '1'
+      field_widget_remove: '1'
+      view_mode: default
+      field_widget_display: ''
+      open: 0
+      field_widget_display_settings: {  }
+    third_party_settings: {  }
+    type: file_browser
+  field_media:
+    weight: 8
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_media_caption:
+    weight: 10
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_media_credit:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+  field_media_image:
+    weight: 7
+    settings:
+      entity_browser: browse_files_modal
+      field_widget_edit: '1'
+      field_widget_remove: '1'
+      view_mode: default
+      field_widget_display: ''
+      open: 0
+      field_widget_display_settings: {  }
+    third_party_settings: {  }
+    type: file_browser
+  field_media_link:
+    weight: 6
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_timeline_group:
+    weight: 12
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_timeline_type:
+    weight: 13
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_vocab_timeline:
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  path:
+    type: path
+    weight: 18
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 17
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 14
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

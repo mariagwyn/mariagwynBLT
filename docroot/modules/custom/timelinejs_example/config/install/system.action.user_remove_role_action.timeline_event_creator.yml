@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.timeline_event_creator
+  module:
+    - user
+id: user_remove_role_action.timeline_event_creator
+label: 'Remove the Timeline Event Creator role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: timeline_event_creator

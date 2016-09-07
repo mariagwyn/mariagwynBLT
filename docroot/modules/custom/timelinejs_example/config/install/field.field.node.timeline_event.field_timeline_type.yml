@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_timeline_type
+    - node.type.timeline_event
+id: node.timeline_event.field_timeline_type
+field_name: field_timeline_type
+entity_type: node
+bundle: timeline_event
+label: 'Timeline Type'
+description: 'Options are "title", "era" or blank.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

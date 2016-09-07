@@ -1,0 +1,9 @@
+{
+  "name": "mariagwyn/timelinejs_example",
+  "description": "Timeline Event and View for Views TimelineJS",
+  "type": "drupal-module-custom",
+  "homepage": "https://github.com/mariagwyn/timelinejs_example",
+  "require": {
+      "composer/installers": "~1.0"
+  }
+}

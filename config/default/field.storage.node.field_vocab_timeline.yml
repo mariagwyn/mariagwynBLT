@@ -1,0 +1,22 @@
+uuid: 6b79d195-a90a-49e0-8c59-053de1c1b95c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+_core:
+  default_config_hash: AXcA6LBGqFKNGe-wF3O7qyYCXd9P4NgosgolhwJTxTw
+id: node.field_vocab_timeline
+field_name: field_vocab_timeline
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

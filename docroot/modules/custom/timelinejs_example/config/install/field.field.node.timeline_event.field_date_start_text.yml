@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_start_text
+    - node.type.timeline_event
+id: node.timeline_event.field_date_start_text
+field_name: field_date_start_text
+entity_type: node
+bundle: timeline_event
+label: 'Start Date (text)'
+description: 'A text field to render dates before 1970. You must enter "YYYY-MM-DD". You may use the "Display Date" field to ''hide'' MM-DD. BCE dates can be entered as "-0044-03-15" (the Ides of March, Ceasar''s death).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,49 @@
+uuid: 417553c1-2b44-4fe3-a69a-9f879aa622a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.timeline_event.body
+    - field.field.node.timeline_event.field_date_display_text
+    - field.field.node.timeline_event.field_date_end_text
+    - field.field.node.timeline_event.field_date_start_text
+    - field.field.node.timeline_event.field_image_background
+    - field.field.node.timeline_event.field_media
+    - field.field.node.timeline_event.field_media_caption
+    - field.field.node.timeline_event.field_media_credit
+    - field.field.node.timeline_event.field_media_link
+    - field.field.node.timeline_event.field_timeline_group
+    - field.field.node.timeline_event.field_timeline_type
+    - field.field.node.timeline_event.field_vocab_timeline
+    - node.type.timeline_event
+  module:
+    - text
+    - user
+id: node.timeline_event.teaser
+targetEntityType: node
+bundle: timeline_event
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_date_display_text: true
+  field_date_end_text: true
+  field_date_start_text: true
+  field_image_background: true
+  field_media: true
+  field_media_caption: true
+  field_media_credit: true
+  field_media_image: true
+  field_media_link: true
+  field_timeline_group: true
+  field_timeline_type: true
+  field_vocab_timeline: true

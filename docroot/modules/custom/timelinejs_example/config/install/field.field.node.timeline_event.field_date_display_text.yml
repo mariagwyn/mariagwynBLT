@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_display_text
+    - node.type.timeline_event
+id: node.timeline_event.field_date_display_text
+field_name: field_date_display_text
+entity_type: node
+bundle: timeline_event
+label: 'Display Date (text)'
+description: 'Date as you want it to be visible'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

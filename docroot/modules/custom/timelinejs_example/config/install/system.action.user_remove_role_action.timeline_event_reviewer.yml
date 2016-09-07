@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.timeline_event_reviewer
+  module:
+    - user
+id: user_remove_role_action.timeline_event_reviewer
+label: 'Remove the Timeline Event Reviewer role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: timeline_event_reviewer

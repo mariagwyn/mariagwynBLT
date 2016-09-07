@@ -1,0 +1,21 @@
+uuid: 1b66b918-c9a4-4bcb-b958-815cbb8cfa12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_background_color
+    - node.type.timeline_event
+_core:
+  default_config_hash: dlcialTb8-5nZ0NmV8HsDPR6_0HulfXnGrjcsOHEKjQ
+id: node.timeline_event.field_background_color
+field_name: field_background_color
+entity_type: node
+bundle: timeline_event
+label: 'Background Color'
+description: 'The field should contain a string representing a CSS color, in hexadecimal (e.g. #0f9bd1) or a valid <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Color_keywords" target="_blank">CSS color keyword</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

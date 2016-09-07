@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media
+    - node.type.timeline_event
+  module:
+    - text
+id: node.timeline_event.field_media
+field_name: field_media
+entity_type: node
+bundle: timeline_event
+label: 'Media (Text)'
+description: 'Text in raw html format, either <code> <iframe> </code> or <code> <blockquote> </code> which are compatible with <a href="https://timeline.knightlab.com/docs/media-types.html" target="_blank">TimelineJS media types</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
