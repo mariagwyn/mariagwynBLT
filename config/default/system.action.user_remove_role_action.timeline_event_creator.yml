@@ -1,0 +1,16 @@
+uuid: 823cba5b-ea5c-4cab-83a9-0d07350d6512
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.timeline_event_creator
+  module:
+    - user
+_core:
+  default_config_hash: fl4_ymF49JuLd6U7AV-2z7nuJey9i7HtoxGA5FrGOOE
+id: user_remove_role_action.timeline_event_creator
+label: 'Remove the Timeline Event Creator role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: timeline_event_creator

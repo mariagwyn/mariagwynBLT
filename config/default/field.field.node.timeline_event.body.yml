@@ -1,0 +1,24 @@
+uuid: 10577b5c-f6b1-4619-b19a-f58716731a0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.timeline_event
+  module:
+    - text
+_core:
+  default_config_hash: TMK-iZ3sJJFDWoppC5UQuw_ayU1_hIRD_bjj9t55SKM
+id: node.timeline_event.body
+field_name: body
+entity_type: node
+bundle: timeline_event
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

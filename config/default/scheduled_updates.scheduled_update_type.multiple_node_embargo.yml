@@ -1,0 +1,22 @@
+uuid: 5b162c98-37d5-4d09-8dd5-baaafc33b127
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: XgoDCqYuyF6STQBfeSp4lIIxuhjy9QCITOfzIvvF5pQ
+id: multiple_node_embargo
+label: 'Publish multiple nodes at a certain time'
+update_entity_type: node
+update_types_supported:
+  - independent
+field_map:
+  field_moderation_state_1: moderation_state
+update_runner:
+  id: default_independent
+  after_run: DELETE
+  invalid_update_behavior: DELETE
+  create_revisions: BUNDLE_DEFAULT
+  update_user: USER_UPDATE_OWNER
+  bundles:
+    landing_page: landing_page
+    page: page

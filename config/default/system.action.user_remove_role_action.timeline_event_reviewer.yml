@@ -1,0 +1,16 @@
+uuid: 5e7df85d-3879-42f1-9ae2-4a17994863e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.timeline_event_reviewer
+  module:
+    - user
+_core:
+  default_config_hash: 3SCHtgux5cvJREXZoe4zzvFrbi2780XWr1ubnM6m030
+id: user_remove_role_action.timeline_event_reviewer
+label: 'Remove the Timeline Event Reviewer role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: timeline_event_reviewer

@@ -1,0 +1,16 @@
+uuid: 1a7b6f28-6571-4320-81d3-868e3e8d5e75
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.timeline_event_reviewer
+  module:
+    - user
+_core:
+  default_config_hash: txY3lmyFTeNN-q5mPwE0dlR7JUjLUgX_YEPBeKRJpZ8
+id: user_add_role_action.timeline_event_reviewer
+label: 'Add the Timeline Event Reviewer role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: timeline_event_reviewer

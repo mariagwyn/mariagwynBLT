@@ -1,0 +1,22 @@
+uuid: 4f862dfa-8cdc-4ecb-a4ee-5475a5a4e701
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: P1qjqkvu2Pkeq0cvxwm___5B57i6zy76a1Se2bVVjas
+id: node.field_media_credit
+field_name: field_media_credit
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

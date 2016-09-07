@@ -1,0 +1,23 @@
+uuid: fd82fbe5-7973-4d99-a50a-1a3f5da822a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media_caption
+    - node.type.timeline_event
+  module:
+    - text
+_core:
+  default_config_hash: yCy-kJAe0xcCHY4knJA0ulIty-kwdAPhFMQ7cucQKx4
+id: node.timeline_event.field_media_caption
+field_name: field_media_caption
+entity_type: node
+bundle: timeline_event
+label: 'Media Caption'
+description: 'This field may contain any text, including HTML markup.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
