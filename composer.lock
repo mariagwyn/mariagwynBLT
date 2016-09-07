@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e35e3254095efd09886aea54595c1b42",
-    "content-hash": "313f503d866408e7223f40e108ff8cc4",
+    "hash": "3f0de28cd0efb20c0dfc700a8814f9b5",
+    "content-hash": "fa57cf0f45392cc0847587a08ea476f4",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3336,6 +3336,32 @@
                 "twitter"
             ],
             "time": "2015-08-03 21:35:18"
+        },
+        {
+            "name": "mariagwyn/timelinejs_example",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mariagwyn/timelinejs_example.git",
+                "reference": "262083732e37c6654d89315f3544663b8464c844"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mariagwyn/timelinejs_example/zipball/262083732e37c6654d89315f3544663b8464c844",
+                "reference": "262083732e37c6654d89315f3544663b8464c844",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-module-custom",
+            "description": "Timeline Event and View for Views TimelineJS",
+            "homepage": "https://github.com/mariagwyn/timelinejs_example",
+            "support": {
+                "source": "https://github.com/mariagwyn/timelinejs_example/tree/master",
+                "issues": "https://github.com/mariagwyn/timelinejs_example/issues"
+            },
+            "time": "2016-09-07 22:23:48"
         },
         {
             "name": "masterminds/html5",
